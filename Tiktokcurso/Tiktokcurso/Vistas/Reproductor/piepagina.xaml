@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tiktokcurso.Vistas.Reproductor.piepagina">
+    <Grid ColumnDefinitions="*,*,*,*,*">
+        <StackLayout VerticalOptions="Center">
+            <Image Source="https://i.ibb.co/8jbMDFq/casa-silueta-negra-sin-puerta-1.png"
+                   Style="{StaticResource imagepiedepagina}" />
+            <Label Text="Inicio"
+                   Style="{StaticResource lblpiepagina}" />
+        </StackLayout>
+        <StackLayout Grid.Column="1">
+            <Image Source="https://i.ibb.co/LztL1Wz/brujula.png"
+                   Style="{StaticResource imagepiedepagina}" />
+            <Label Text="Tendencias"
+                   Style="{StaticResource lblpiepagina}" />
+        </StackLayout>
+        <Grid Grid.Column="2"
+              VerticalOptions="Start"
+              HorizontalOptions="Center">
+            <BoxView BackgroundColor="#FF02A0"
+                     HeightRequest="45"
+                     WidthRequest="45"
+                     VerticalOptions="Start"
+                     CornerRadius="9"
+                     TranslationX="3"/>
+            <BoxView BackgroundColor="#00DFEF"
+                     HeightRequest="45"
+                     WidthRequest="45"
+                     VerticalOptions="Start"
+                     CornerRadius="9"
+                     TranslationX="-3"/>
+            <Button HeightRequest="45"
+                    WidthRequest="45"
+                    VerticalOptions="Start"
+                    BackgroundColor="White"
+                    CornerRadius="12"
+                    FontSize="30" />
+            <Label Text="+"
+                   FontSize="35"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TranslationY="-4" />
+        </Grid>
+        <StackLayout Grid.Column="3">
+            <Image Source="https://i.ibb.co/CKvk5CQ/comentario-2.png"
+                   Style="{StaticResource imagepiedepagina}" />
+            <Label Text="Bandeja de entrada"
+                   Style="{StaticResource lblpiepagina}" />
+        </StackLayout>
+        <StackLayout Grid.Column="4">
+            <Image Source="https://i.ibb.co/4JNNXWW/perfil-del-usuario.png"
+                   Style="{StaticResource imagepiedepagina}" />
+            <Label Text="Perfil"
+                   Style="{StaticResource lblpiepagina}" />
+        </StackLayout>
+    </Grid>
+    
+</ContentView>
